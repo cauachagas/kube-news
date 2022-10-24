@@ -9,7 +9,7 @@ spec:
   template:
     metadata:
       labels:
-        app: postgre 
+        app: postgre
     spec:
       containers:
         - name: postgre
@@ -75,7 +75,7 @@ spec:
   selector:
     app: web
   ports:
-    - port: 81
+    - port: 80
       targetPort: 8080
-      nodePort: 30001
+      nodePort: 30000
   type: NodePort
